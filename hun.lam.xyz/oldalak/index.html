@@ -1,55 +1,138 @@
 <!DOCTYPE html>
 <html lang="hu">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAM - Budapest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../stilus/style.css">
     <script src="../config/script.js" defer></script>
 </head>
-
 <body>
     <header>
         <nav id="nav-main-page">
-            <div>
-                <a href="#">LOGO</a>
+            <div class="logo">
+                <a href="#">
+                    <img src="../kepek/LAM_LOGO_NEW_WHITE-1.webp" alt="LAM - Light Art Museum Logo" class="logo-image" >
+                </a>
             </div>
             <div class="nav-links2">
-                <a href="#">Új kiállítás</a>
-                <a href="#">Jegyvásárlás</a>
-                <a href="#">Kosár</a>
-                <a href="#">ENG</a>
-                <div id="menu-links-container" class="menu-container" onclick="toggleMenu()">
-                    <div>
+                <a href="#" class="desktop-link">Új kiállítás</a>
+                <a href="#" class="btn-ticket">Jegyvásárlás</a>
+                <a href="#" class="desktop-link">Kosár</a>
+                <a href="#" class="desktop-link">ENG</a>
+                
+                <div id="menu-links-container" class="menu-container">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
-                    </div>
-                    <div class="nav-menu-items">
-                        <a href="#">Új kiállítás</a>
-                        <a href="#">Ajándékutalvány</a>
-                        <a href="#">Rólunk</a>
-                        <a href="#">Kiállítás Archivum</a>
-                        <a href="#">Hírek</a>
-                        <a href="#">Oktatás</a>
-                        <a href="#">Tervezd meg a Látogatásod</a>
-                        <a href="#">Jegyvásárlás</a>
-                        <a href="#">ENG</a>
-                    </div>
                 </div>
+            </div>
+
+            <div id="nav-menu-items">
+                <a href="#">Új kiállítás</a>
+                <a href="#">Ajándékutalvány</a>
+                <a href="#">Rólunk</a>
+                <a href="#">Kiállítás Archivum</a>
+                <a href="#">Hírek</a>
+                <a href="#">Oktatás</a>
+                <a href="#">Tervezd meg a Látogatásod</a>
+                <a href="#">Jegyvásárlás</a>
+                <a href="#">ENG</a>
             </div>
         </nav>
     </header>
-    <main class="main-content">
 
+    <main class="main-content">
+        <section class="hero-section">
+            <h1>IV. KIÁLLÍTÁS 2025/2026</h1>
+            <h1 class="highlight">MORE THAN HUMAN</h1>
+            
+            <div class="content-block">
+                <p>Lehet hogy mégsem az ember áll a világ középpontjában?
+                A múzeum új, negyedik kiállítása a poszthumanizmus témakörét dolgozza fel, látványos, sokszor kifejezetten a
+                múzeum tereibe készült műveken keresztül. Játszhat az ember istent? Eshet az eső felfelé? Hogyan nézne ki a
+                Föld ember nélkül? Fedezd fel a Light Art Museum új kiállítását, ahol közel 40 nemzetközi, köztük több
+                világsztár alkotását láthatod.</p>
+                <div class="button-group">
+                    <button class="primary-btn">Jegyvásárlás</button>
+                    <button class="secondary-btn">Ajándékutalványok</button>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h2>Egy új múzeumi élmény</h2>
+                <p>Ez a múzeum más. Nem egy hagyományos, fehér, steril kiállítótér. Itt az élmény már akkor elkezdődik, amikor
+                belépsz a kapun. A tudomány és a technológia legújabb eredményeiből táplálkozó képzőművészeti alkotások
+                segítségével örökre másképp láthatod a világot.
+                A múzeum az egykori Belvárosi Piac hatalmas, 2000 négyzetméteres műemlék épületében működik, ahol az egykori
+                standok helyén technológiai alapú, progresszív műalkotások kapnak helyet. A csarnok közepén Európa
+                legnagyobb vetített tere, egy zeppelin található, amelybe belépve a leglátványosabb immerzív vetítéseink
+                vesznek körbe.</p>
+                <button class="outline-btn">Aktuális kiállítás</button>
+            </div>
+
+            <div class="content-block">
+                <h2>A MÚZEUMRÓL</h2>
+                <p>A Light Art Museum Budapest a fénnyel folytatott művészeti kísérletek helyszíne. Az egyik első olyan
+                kiállítóhely a világon, amely kifejezetten ilyen karakterű művek gyűjtésére, kutatására és bemutatására
+                szakosodott. Az intézmény a művészet, a tudomány és a technológia interakciójára épülő eredményeket, a fény
+                kreatív használatával végzett kutatómunka legkülönbözőbb területeit úgy mutatja be, hogy egy komplex és
+                változatos értelmezési mező szülessen. A múzeumban látható művek a képzelet és a valóság közti
+                határterületeket teszik megtapasztalhatóvá, feltárva a látogatók előtt a fényhasználat esztétikai utópiáit
+                és a médium művészeti lehetőségeinek leginnovatívabb formáit.</p>
+            </div>
+        </section>
+
+        <section class="gallery-tease">
+            <div class="promo-box">
+                <div class="placeholder-img">IMAGE 1</div>
+                <a href="#" class="promo-link">Ajándékjegyek</a>
+                <div class="placeholder-img">IMAGE 2</div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2>Helyszín</h2>
+            <p>1054 Budapest, Hold utca 13.</p>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m3!1d2695.143588970868!2d19.051934976865342!3d47.50658429481261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc1101968841%3A0x643190853509d435!2sBudapest%2C%20Hold%20u.%2013%2C%201054!5e0!3m2!1shu!2shu!4v1710000000000!5m2!1shu!2shu" 
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </section>
     </main>
+
     <footer class="footer">
-        <div>Kapcsolat</div>
-        <div>Nyitvatartás</div>
-        <div>Sajtó</div>
-        <div>Impresszum</div>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Kapcsolat</h4>
+                <p>+36 70 575 3999</p>
+                <p>info@lam.xyz</p>
+                <p>Sajtó: press@lam.xyz</p>
+                <div class="socials">
+                    <a href="#">FACEBOOK</a> | <a href="#">YOUTUBE</a> | <a href="#">INSTAGRAM</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Nyitvatartás</h4>
+                <p>Hétfő – Csütörtök: 10:00 – 20:00 (Utolsó belépés: 19:00)</p>
+                <p>Péntek – Vasárnap: 10:00 – 21:00 (Utolsó belépés: 20:00)</p>
+            </div>
+            <div class="footer-col">
+                <h4>Sajtó & Információ</h4>
+                <a href="#">Megjelenések</a>
+                <a href="#">Sajtóanyagok</a>
+                <a href="#">Gyakori kérdések</a>
+            </div>
+            <div class="footer-col">
+                <h4>Impresszum</h4>
+                <a href="#">ÁSZF</a>
+                <a href="#">Adatkezelési tájékoztató</a>
+                <a href="#">Süti (Cookie) szabályzat</a>
+            </div>
+        </div>
     </footer>
 </body>
-
 </html>

@@ -1,7 +1,7 @@
 const menuBtn = document.getElementById('menu-links-container');
-const nav = document.querySelector('.nav-links2');
+const dropdown = document.getElementById('nav-menu-items');
 
 menuBtn.addEventListener('click', () => {
-    const isOpen = nav.classList.toggle('active');
-    menuBtn.setAttribute('aria-expanded', isOpen);
+    menuBtn.classList.toggle('change');
+    dropdown.classList.toggle('open');
 });
