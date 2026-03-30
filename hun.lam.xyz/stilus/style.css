@@ -8,7 +8,8 @@
 .nav-links2 {
     text-align: right;
 }
-#menu-links-container {
+
+.menu-container {
   display: inline-block;
   cursor: pointer;
 }
@@ -28,4 +29,14 @@
 .change .bar2 {opacity: 0;}
 
 .change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);}
+  transform: translate(0, -11px) rotate(45deg);
+}
+.nav-menu-items {
+    position: fixed;
+    right: -100%;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links2.active .nav-menu-items {
+    right: 0;
+}
